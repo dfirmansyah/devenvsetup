@@ -3,7 +3,7 @@ Version: 1.0
 
 This walkthrough using esp-idf version **3.3.1**, as for version 4, it has different setup so this method might not work.
 
-Compared with official setup from Espressif There is some different with using this setup method:
+Compared with official setup from Espressif, there is some different with this setup method:
 1. we can't use `make` command to perform operation like `build`, `flash`, and `monitor`, we would use `idf.py` script provided by esp-idf.
   Because, for esp-idf, `make` command could only work properly inside MSYS console. There may some configuration to make it work, but I don't find it yet.
   Insted we use `idf.py` script provided by esp-idf.
@@ -108,7 +108,7 @@ We just need to set three new environment variable on windows.
 | OPENOCD_SCRIPTS | C:\Users\FULAN\.espressif\tools\openocd-esp32\v0.10.0-esp32-20190313\openocd-esp32\share\openocd\scripts    |
 | PATH          | C:\Users\FULAN\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin;C:\Users\FULAN\.espressif\tools\esp32ulp-elf\2.28.51.20170517\esp32ulp-elf-binutils\bin;C:\Users\FULAN\.espressif\tools\cmake\3.13.4\bin;C:\Users\FULAN\.espressif\tools\openocd-esp32\v0.10.0-esp32-20190313\openocd-esp32\bin;C:\Users\FULAN\.espressif\tools\mconf\v4.6.0.0-idf-20190628\;C:\Users\FULAN\.espressif\tools\ninja\1.9.0\;C:\Users\FULAN\.espressif\tools\idf-exe\1.0.1\;C:\Users\FULAN\.espressif\tools\ccache\3.7\;C:\Users\FULAN\.espressif\python_env\idf3.3_py2.7_env\Scripts;%PATH% |
 
-For now your VS Code is ready for create an ESP system program. You could use VS Code own integrated terminal to build and flash program. Just remember, instead of using `make`, you should use `idf.py`.
+For now your VS Code is ready to develop an ESP system program. You could use VS Code own integrated terminal to build and flash program. Just remember, instead of using `make`, you should use `idf.py`.
 
 ## Additional Note
 You can use VS Code extension like C/C++ extension to provide intellisene and several additional feature for c/c++ development. You could also create workspace task to build and flashing to board. But, all of those is not covered in this walkthrough. Feel free to give any sugestion to improve this guide :).
